@@ -7,15 +7,15 @@ replicador:
 # ===========================================
 spring:
   datasource:
-    url: jdbc:mysql://<host>:3306/<db>?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
-    username: <usuario>
-    password: <clave>
+    url: jdbc:mysql://localhost:3306/replicador?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: replicador
+    password: replicador1
     driver-class-name: com.mysql.jdbc.Driver
   mail:
-    host: <smtp>
+    host: mail.esyop.gob.ar
     port: 587
-    username: <usuario>
-    password: <clave>
+    username: sistemas@esyop.gob.ar
+    password: Coys2025$%
     properties:
       mail:
         smtp:
@@ -43,8 +43,8 @@ logging:
 
 emails:
   values:
-    recivers: rafaelrio4@gmail.com
-    sender: rafaelrio4@gmail.com
+    recivers: lalleman@esyop.gob.ar,obraag@esyop.gob.ar,rafaelrio4@gmail.com
+    sender: systemas@esyop.gob.ar
 
 origen:
-  value: CTR
+  value: Centros-Verdes
