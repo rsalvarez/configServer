@@ -70,6 +70,18 @@
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.3.1</version> <!-- Use the latest stable version -->
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.esyop.configserver.ConfigServerApplication</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
 
         </plugins>
 
