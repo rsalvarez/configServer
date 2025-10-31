@@ -1,4 +1,4 @@
 .idea
 target*
 *.log
-./src/main/resources/configs/*.yml
+src/main/resources/configs
